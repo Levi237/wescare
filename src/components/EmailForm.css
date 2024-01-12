@@ -1,0 +1,45 @@
+form.email {
+    --gap: 8px;
+    --border: 1px;
+    --input-padding: calc(var(--gap) + var(--border));
+    --input-total-padding: calc(var(--input-padding) * 2);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.email label, .email input {
+    margin-left: 0;
+    margin-right: 0;
+}
+.email textarea,
+.email .input { 
+    width: calc(100% - var(--input-padding)*2);
+    padding-inline: var(--gap); 
+}
+
+
+/* Type specific form style */
+.email .name-section,
+.email.contact .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+}
+
+
+
+.email.newsletter .contact-section {
+    display: flex;
+}
+
+.email textarea {
+    border: 1px solid black;
+    border-radius: 0px;
+    height: 120px;
+    margin: 5px 0;
+    font-family: Montserrat, Arial;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #473E4E;
+}
