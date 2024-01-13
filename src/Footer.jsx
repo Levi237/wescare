@@ -10,9 +10,13 @@ const Footer = ({ contact }) => {
                     <div>
                         <div data-contact-info="address">
                             <section><h3>ADDRESS:</h3></section>
-                            {contact.street}
-                            <br/>
-                            {contact.suite}
+                            { contact.suite && <> 
+                                {contact.street} 
+                            </> }
+                            { contact.suite && <>
+                                <br/>
+                                {contact.suite}
+                            </> }
                             <br/>
                             {contact.city}, {contact.state} {contact.zip} 
                         </div>
@@ -30,6 +34,7 @@ const Footer = ({ contact }) => {
                                 { contact.phone }
                             </section>
                         </div>
+                        { (contact.fax !== '') &&
                         <div data-contact-info="fax">
                             <section>
                                 <h3>FAX: </h3>
@@ -38,6 +43,7 @@ const Footer = ({ contact }) => {
                                 { contact.fax }
                             </section>
                         </div>
+                        }
                     </div>
                 </section>
                 <section className="center">

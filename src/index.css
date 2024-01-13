@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
   --rem: 18;
   --page-width: 820px;
-  --font-fancy: 'Roboto Slab', courier;
+  --font-fancy: 'Amiri', courier;
   --font-body: 'Roboto', sans-serif;
-
 
   --color-hex-theme-light: #600C1B;
   --color-hsl-theme-light: 216, 47%, 48%;
@@ -57,6 +57,9 @@ h3 {
 }
 h4 {
   font-size: 1.2rem;
+}
+h1, h2, h3, h4, h5 {
+  line-height: 120%;
 }
 p,ul,li {
   font-size: 1rem;
@@ -204,9 +207,9 @@ footer h3 {
   margin: 16px 0 4px;
 }
 footer .grid.three-col .right {
-  justify-content: end;
-    align-items: end;
-    display: flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* Page Style */

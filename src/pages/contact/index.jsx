@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import '../pages.css';
-import styled from 'styled-components';
+import styled               from 'styled-components';
 
 import EmailForm            from '../../components/EmailForm';
+
+import '../pages.css';
 
 export default class ContactPage extends Component {
     render(){
@@ -10,7 +11,7 @@ export default class ContactPage extends Component {
 
         let phone = contact.phone.replaceAll('.', '-');
         return (
-            <div className="contact-page page-wrapper">
+            <Wrapper className="contact-page page-wrapper">
                 <section className="page-width">
                     <div className="grid two-col mobile-one-col">
                         <div>
@@ -42,18 +43,18 @@ export default class ContactPage extends Component {
                     <br/><br/>
                     <EmailForm form="contact" />
                 </section>
-            </div>
+            </Wrapper>
         );
     };
 };
 
 const Wrapper = styled.div`
-.path-fill {
-    fill:none;
-    stroke:#000;
-    stroke-width:4;
-    stroke-linecap:round;
-    stroke-linejoin:round;
-    stroke-miterlimit:10;
-}
+    .path-fill {
+        fill:none;
+        stroke:#000;
+        stroke-width:4;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+    }
 `;
