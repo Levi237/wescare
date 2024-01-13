@@ -13,10 +13,11 @@ export default class ServicesPage extends Component {
         }
     }
     render(){
-        const { content, image, info } = this.state;
+        const { content, image } = this.state;
+        const { contact } = this.props;
         return (
             <div className="services-page">
-                <Hero content={content} image={image} />
+                <Hero contact={contact} content={content} image={image} />
                 <div className="home-page page-wrapper">
                 <ServicesList />
                 </div>

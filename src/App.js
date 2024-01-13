@@ -14,14 +14,17 @@ export default class App extends Component {
 
   state = {
     contact: {
-      street: '5435 Balboa Blvd.',
-      suite: 'Suite 110',
-      city: 'Encino',
-      state: 'CA',
-      zip: '91316',
-      fax: '818.616.3078',
-      phone: '818.290.3768',
+      name: 'Wescare',
+      business: 'Home Health Providers, Inc.',
+      logo: 'Wescare_long_logo_header.png',
+      phone: '818.672.8808',
+      fax: '818.672.8806',
       email: 'fhhhealth@gmail.com',
+      street: '16921 Parthenia St.',
+      suite: '',
+      city: 'Northridge',
+      state: 'CA',
+      zip: '91343',
     }
   }
   scrollToTop = () => {
@@ -39,13 +42,13 @@ export default class App extends Component {
 
         <Routes>
           <Route path={routes.HOME} exact element={<>
-            <HomePage  contact={contact} scrollToTop={this.scrollToTop} />
+            <HomePage contact={contact} scrollToTop={this.scrollToTop} />
           </>}></Route>
           <Route path={routes.MAIL} exact element={<>
             <ContactPage contact={contact}/>
           </>}></Route>
           <Route path={routes.SERV} exact element={<>
-            <ServicesPage />
+            <ServicesPage contact={contact} />
           </>}></Route>
           <Route path={routes.DONE} exact element={<>
             <EmailConfirmPage />

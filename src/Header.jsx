@@ -10,11 +10,7 @@ const Header = ({contact}) => {
         <header>
             <section className="header-left">
             <Link style={{display: 'flex'}} to={routes.HOME}>
-                <img width="40" height="40" src="faithandhope_logo_outline.png" alt="Faith and Hope Home Health Logo Icon"/>
-                <div>
-                    <h3>Faith & Hope</h3>
-                    <h5>Home Health, Inc.</h5>
-                </div>
+                <img width="auto" height="40" src={contact.logo} alt={`${contact.name} ${contact.business} Logo`}/>
                 </Link>
             </section>
             <section className="header-mid">

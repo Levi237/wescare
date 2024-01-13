@@ -31,7 +31,7 @@ const Info = () => {
                 </p>
                 <p>
                     Within 24-48 hours, or as directed by physicians,
-                    a Faith & Hope Home Health. Inc.
+                    a Wescare Home Health Providers. Inc.
                     representative will contact and visit the patient
                     for admission and start of services.
                 </p>

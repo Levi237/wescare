@@ -51,7 +51,7 @@ export default class HomePage extends Component {
 
         return (
             <div className="home-page page-wrapper">
-                <Hero content={content} image={image} />
+                <Hero contact={contact} content={content} image={image} />
                 <div className="contact-section-container">
                     <div className="contact-section">
                         <h2>Available 24/7</h2>

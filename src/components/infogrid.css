@@ -2,6 +2,7 @@
     --size: 140px;
     height: var(--size);
     width: var(--size);
+    filter: hue-rotate(127deg) brightness(0.5);
 }
 
 .info-grid-section {

@@ -58,7 +58,7 @@
     max-height: 80px;
 }
 .hero-info > div {
-    color: #FFF;
+    color: var(--color-hex-font-light);
     display: flex;
     flex-direction: column;
     padding-top: 120px;

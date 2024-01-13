@@ -117,7 +117,7 @@
 }
 
 .contact-section-container {
-    background-image: linear-gradient(0deg, #003287 0%, #4170B6 100%);
+    background-image: linear-gradient(0deg, var(--color-hex-theme-dark) 0%, var(--color-hex-theme-light) 100%);
     padding: 80px 0;
 }
 .contact-section {
@@ -126,7 +126,7 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--color-hex-bg);
     padding: 3rem 0;
 }
 
@@ -142,7 +142,7 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
     padding: 1.5rem 0 3rem;
 }
 .email.contact .contact-section {
