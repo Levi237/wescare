@@ -8,10 +8,12 @@ Built by Levi Winans
 
 
 ## Project:
-** Wescare _Home Health Providers_ **
+
+**Wescare _Home Health Providers_**
+
 A simple website with pamphlet information and contact form
 
-### Techincal Info
+## Techincal Info
 Imports include:
 * react-router-dom
 * styled-components
