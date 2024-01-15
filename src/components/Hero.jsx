@@ -2,9 +2,9 @@ import React            from 'react';
 import TextIo           from './TextIo';
 
 import './hero.css';
-const Hero = ({ contact, content, image }) => {
+const Hero = ({ contact, hero }) => {
 
-    const contentList = content.map((m, k) => {
+    const contentList = hero.content.map((m, k) => {
         return <TextIo key={k}>{m}</TextIo>
     })
     
@@ -13,11 +13,11 @@ const Hero = ({ contact, content, image }) => {
             <div>
                 <section>
                     <div>
-                        <img src={`/${image.src}`} alt={`${image.alt}`}/>
+                        <img src={`/${hero.image.src}`} alt={`${hero.image.alt}`}/>
                         <div className="hero-info">
                             <div>
                                 <h1>{contact.name}</h1>
-                                <h4>{contact.business}</h4>
+                                { contact.business !== '' && <h4>{contact.business}</h4> }
                                 <div className="spacer"></div>
                                 {contentList}
                             </div>
