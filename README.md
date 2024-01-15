@@ -8,15 +8,17 @@ Built by Levi Winans
 
 
 ## Project:
-### Wescare Home Health Providers
-Build a simple website with pamphlet information and contact form
+** Wescare _Home Health Providers_ **
+A simple website with pamphlet information and contact form
 
 ### Techincal Info
 Imports include:
 * react-router-dom
 * styled-components
 
-Email connects to MailChimp free account
+Hosted on Firebase
+
+Email connected to MailChimp _free account_
 
 
 
