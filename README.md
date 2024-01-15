@@ -1,8 +1,8 @@
 # Levi Eiko Designs
 
 
-### Wescare
-Home Health Providers
+## Wescare
+### Home Health Providers
 
 Built by Levi Eiko Designs
 [https://levieikodesigns.com]
@@ -15,5 +15,9 @@ Built by Levi Eiko Designs
 
 
 ## Techincal Info
+Imports include:
+* react-router-dom
+* styled-components
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
