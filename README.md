@@ -1,20 +1,16 @@
 # Levi Eiko Designs
 
+### Wescare Home Health Providers
 
-### Wescare
-Home Health Providers
+Built by Levi Winans
 
-Built by Levi Eiko Designs
-[https://levieikodesigns.com]
+[Levi@LeviEikoDesigns.com]
 
-
-
+(https://levieikodesigns.com)
 
 
 
-
-
-## Techincal Info
+### Techincal Info
 Imports include:
 * react-router-dom
 * styled-components
