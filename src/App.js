@@ -19,7 +19,7 @@ export default class App extends Component {
       logo: 'Wescare_long_logo_header.png',
       phone: '818.672.8808',
       fax: '818.672.8806',
-      email: 'fhhhealth@gmail.com',
+      email: 'Wescare8888@yahoo.com',
       street: '16921 Parthenia St.',
       suite: '',
       city: 'Northridge',
