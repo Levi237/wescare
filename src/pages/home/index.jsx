@@ -8,14 +8,12 @@ import InfoGrid                 from '../../components/InfoGrid';
 
 export default class HomePage extends Component {
     state = {
-        content: [``],
-        image: {
-            src: `registered-nurse-assisting-client.png`,
-            alt: `Caregiver advising elderly patient with his options`
-        },
-        textInfoIntro: {
-            title: [`Who do we serve?`],
-            body: [`Medicare patients who need ongoing assistance to manage their health care needs at home and are referred for home health services by physicians, local hospitals, board & care centers, and skilled nursing homes.`]
+        hero: {
+            image: {
+                src: `registered-nurse-assisting-client.png`,
+                alt: `Caregiver advising elderly patient with his options`
+            },
+            content: [``]
         },
         info : [{
             img: 'shield-heart.png',
@@ -44,14 +42,14 @@ export default class HomePage extends Component {
         }]
     }
     render(){
-        const { content, image, info } = this.state;
+        const { hero, info } = this.state;
         const { contact, scrollToTop } = this.props;
 
         let phone = contact.phone.replaceAll('.', '-');
 
         return (
             <div className="home-page page-wrapper">
-                <Hero contact={contact} content={content} image={image} />
+                <Hero contact={contact} hero={hero} />
                 <div className="contact-section-container">
                     <div className="contact-section">
                         <h2>Available 24/7</h2>

@@ -50,10 +50,9 @@
 .info-grid-section > section:nth-of-type(2) {
     grid-area: B;
 }
+
 @media (min-width: 740px){
-    .info-grid-section .top-image {
-        display: none;
-    }
+
 }
 
 @media (max-width: 739px){
@@ -64,9 +63,7 @@
         row-gap: 32px;
         column-gap: 16px;
     }
-    .top-image {
-        margin-top: 80px;
-    }
+
     .info-grid-section ul {
         margin-left: -64px;
     }

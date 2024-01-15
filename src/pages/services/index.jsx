@@ -6,18 +6,20 @@ import Hero                     from '../../components/Hero';
 
 export default class ServicesPage extends Component {
     state = {
-        content: ['Known for dedicated & quality', 'care within the home.'],
-        image: {
-            src: 'assisting-standing-care.png',
-            alt: 'Caregiver advising elderly patient to her walker'
+        hero: {
+            content: ['Known for dedicated & quality', 'care within the home.'],
+            image: {
+                src: 'assisting-standing-care.png',
+                alt: 'Caregiver advising elderly patient to her walker'
+            }
         }
     }
     render(){
-        const { content, image } = this.state;
+        const { hero } = this.state;
         const { contact } = this.props;
         return (
             <div className="services-page">
-                <Hero contact={contact} content={content} image={image} />
+                <Hero contact={contact} hero={hero} />
                 <div className="home-page page-wrapper">
                 <ServicesList />
                 </div>
