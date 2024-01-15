@@ -10,7 +10,7 @@ const Footer = ({ contact }) => {
                     <div>
                         <div data-contact-info="address">
                             <section><h3>ADDRESS:</h3></section>
-                            { contact.suite && <> 
+                            { contact.street && <> 
                                 {contact.street} 
                             </> }
                             { contact.suite && <>
